@@ -1,0 +1,8 @@
+{
+  "Camp":
+  {
+    "camp_tile_xpath": "//div[@title='Camp']",
+    "camp_page_verification_xpath": "//input[@value='Camp']"
+  }
+
+}

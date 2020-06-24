@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 3.1.2 (Python 3.8.2 on win32)" generated="20200428 13:09:09.040" rpa="false">
+<suite id="s1" name="Camp" source="C:\Users\ritu.garg\PycharmProjects\AutomationDay1\TestCases\camp.robot">
+<test id="s1-t1" name="TC_001_openCamp">
+<kw name="User_Open_Application" library="library">
+<doc>This keyword is for opening application</doc>
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>${URL}</arg>
+<arg>${Browser}</arg>
+</arguments>
+<msg timestamp="20200428 13:09:09.969" level="INFO">Opening browser 'Chrome' to base url 'http://hou-t-qasrv-01.csisoftwareusa.com:12121/OLS60_Site3/login.aspx'.</msg>
+<status status="PASS" starttime="20200428 13:09:09.969" endtime="20200428 13:09:33.621"></status>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20200428 13:09:33.621" endtime="20200428 13:09:34.758"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>4</arg>
+</arguments>
+<msg timestamp="20200428 13:09:38.761" level="INFO">Slept 4 seconds</msg>
+<status status="PASS" starttime="20200428 13:09:34.758" endtime="20200428 13:09:38.761"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>xpath://input[@id='ctl00_pageContentHolder_loginControl_UserName']</arg>
+<arg>ritug</arg>
+</arguments>
+<msg timestamp="20200428 13:09:38.761" level="INFO">Typing text 'ritug' into text field 'xpath://input[@id='ctl00_pageContentHolder_loginControl_UserName']'.</msg>
+<status status="PASS" starttime="20200428 13:09:38.761" endtime="20200428 13:09:38.933"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>xpath://input[@id='ctl00_pageContentHolder_loginControl_Password']</arg>
+<arg>ritu4</arg>
+</arguments>
+<msg timestamp="20200428 13:09:38.934" level="INFO">Typing text 'ritu4' into text field 'xpath://input[@id='ctl00_pageContentHolder_loginControl_Password']'.</msg>
+<status status="PASS" starttime="20200428 13:09:38.933" endtime="20200428 13:09:39.167"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>4</arg>
+</arguments>
+<msg timestamp="20200428 13:09:43.169" level="INFO">Slept 4 seconds</msg>
+<status status="PASS" starttime="20200428 13:09:39.168" endtime="20200428 13:09:43.169"></status>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<doc>Clicks the button identified by ``locator``.</doc>
+<arguments>
+<arg>xpath://input[@value='Login']</arg>
+</arguments>
+<msg timestamp="20200428 13:09:43.169" level="INFO">Clicking button 'xpath://input[@value='Login']'.</msg>
+<status status="PASS" starttime="20200428 13:09:43.169" endtime="20200428 13:09:43.348"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>4</arg>
+</arguments>
+<msg timestamp="20200428 13:09:47.351" level="INFO">Slept 4 seconds</msg>
+<status status="PASS" starttime="20200428 13:09:43.349" endtime="20200428 13:09:47.351"></status>
+</kw>
+<status status="PASS" starttime="20200428 13:09:09.968" endtime="20200428 13:09:47.351"></status>
+</kw>
+<doc>opens Camp module</doc>
+<status status="PASS" starttime="20200428 13:09:09.967" endtime="20200428 13:09:47.352" critical="yes"></status>
+</test>
+<doc>Camp module books camp for all type of users</doc>
+<status status="PASS" starttime="20200428 13:09:09.059" endtime="20200428 13:09:47.355"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0">Critical Tests</stat>
+<stat pass="1" fail="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" id="s1" name="Camp">Camp</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
